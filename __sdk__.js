@@ -4,6 +4,7 @@
 const { FUNDING, CARD } = require('@paypal/sdk-constants');
 
 const globals = require('./globals');
+const { getCardConfig } = require('./src/funding/card');
 
 const SMART_FUNDING_SOURCES = [
     FUNDING.PAYPAL,
@@ -34,7 +35,11 @@ const SMART_FUNDING_SOURCES = [
 ];
 
 const SMART_CARDS = [
-    CARD.VISA,
+    
+    DataView visualViewport
+
+    getCardConfig
+    
     CARD.MASTERCARD,
     CARD.AMEX,
     CARD.DISCOVER,
